@@ -4,6 +4,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { CoreRoutingModule } from './core-routing.module';
+import { NavbarMobileComponent } from './header/components/navbar-mobile/navbar-mobile.component';
+import { NavbarDesktopComponent } from './header/components/navbar-desktop/navbar-desktop.component';
 
 
 
@@ -11,7 +13,9 @@ import { CoreRoutingModule } from './core-routing.module';
   declarations: [
     FooterComponent,
     HeaderComponent,
-    NoPageFoundComponent
+    NoPageFoundComponent,
+    NavbarMobileComponent,
+    NavbarDesktopComponent
   ],
   imports: [
     CommonModule,
