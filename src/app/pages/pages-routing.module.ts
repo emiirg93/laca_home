@@ -1,13 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { PagesComponent } from './pages.component';
 
 const routes: Routes = [{
-  path: '',
-  children: [
-    { path: '', redirectTo: 'home', pathMatch: 'full' },
-    { path: 'home', component: HomeComponent }
-  ]
+  path: 'home',
+  component: PagesComponent,
+  loadChildren: () => import('./pages-routing-children.module').then(m => m.PagesRoutingChildrenModule)
 }];
 
 @NgModule({
