@@ -13,7 +13,7 @@ const childRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'contactame', component: ContactameComponent },
   { path: 'productos', component: ProductosComponent },
-  { path: "productos/:id", component: ListadoProductosComponent },
+  { path: 'productos/:id', component: ListadoProductosComponent },
 ];
 
 @NgModule({
